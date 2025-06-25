@@ -14,6 +14,14 @@ public class GameManager : MonoBehaviour
         NewGame();
     }
 
+    private void Update()
+    {
+        if(this.lives <= 0 && Input.anyKeyDown)
+        {
+            NewGame();
+        }
+    }
+
     private void NewGame()
     {
         SetScore(0);
@@ -70,6 +78,13 @@ public class GameManager : MonoBehaviour
     {
         this.pacman.gameObject.SetActive(false);
         SetLives(this.lives - 1);
+
+        if (this.lives > 0){
+            Invoke(nameof(ResetState), 3.0f);
+        }
+        else{
+            GameOver();
+        }
     }
 
 }
