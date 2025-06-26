@@ -255,7 +255,7 @@ GameObject:
   - component: {fileID: 511691792}
   - component: {fileID: 511691791}
   m_Layer: 0
-  m_Name: RedGhost
+  m_Name: Blinky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -582,7 +582,7 @@ GameObject:
   - component: {fileID: 1231410547}
   - component: {fileID: 1231410546}
   m_Layer: 0
-  m_Name: PinkGhost
+  m_Name: Pinky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -782,7 +782,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: a61cac588e72c864f9d1e9618b0eb2c8, type: 2}
     - target: {fileID: 919132149155446097, guid: a123364514c317049bef3a9c6a2a1bde, type: 3}
       propertyPath: m_Name
-      value: PacMan
+      value: Pacman
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
