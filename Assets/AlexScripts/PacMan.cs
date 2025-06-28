@@ -49,4 +49,5 @@ public class Pacman : MonoBehaviour
             movement.SetDirection(Vector3.forward);
         }
     }
+
 }
