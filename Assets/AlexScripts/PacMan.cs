@@ -1,24 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class ObjectReference : MonoBehaviour
-{
-    public GameObject Player; // Assigned in Inspector
-    private Pacman player;
-
-    private void Start()
-    {
-        player = Player.GetComponent<Pacman>(); // get the Player script component
-        if (player != null)
-        {
-            Debug.Log(Player.transform.position); // or player.transform.position
-        }
-        else
-        {
-            Debug.LogError("Player script not found on assigned GameObject!");
-        }
-    }
-}
 public class Pacman : MonoBehaviour
 {
  
@@ -48,6 +30,9 @@ public class Pacman : MonoBehaviour
         {
             movement.SetDirection(Vector3.forward);
         }
+
+        //float angle = Mathf.Atan2(this.movement.direction.y, this.movement.direction.x);
+        //this.transform.rotation = Quaternion.AngleAxis(angle * Mathf.Rad2Deg, Vector3.forward);
     }
 
 }
