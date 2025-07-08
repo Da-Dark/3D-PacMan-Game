@@ -2,15 +2,27 @@ using UnityEngine;
 
 public class Pellet : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public int points = 10;
 
-    // Update is called once per frame
-    void Update()
+    protected virtual void Eat()
     {
-        
+        GameManager gameManager = FindFirstObjectByType<GameManager>();
+        if (gameManager != null)
+        {
+            gameManager.PelletEaten(this);
+        }
+        else
+        {
+            Debug.LogError("GameManager not found in the scene!");
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log($"Pellet triggered by: {other.gameObject.name}");
+
+        if (other.gameObject.layer == LayerMask.NameToLayer("Pacman"))
+        {
+            Eat();
+        }
     }
 }

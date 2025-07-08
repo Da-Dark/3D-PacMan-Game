@@ -1,16 +1,11 @@
 using UnityEngine;
 
-public class PowerPellet : MonoBehaviour
+public class PowerPellet : Pellet
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public float duration = 8.0f;
 
-    // Update is called once per frame
-    void Update()
+    protected override void Eat()
     {
-        
+        FindObjectOfType<GameManager>().PowerPelletEaten(this);
     }
 }
