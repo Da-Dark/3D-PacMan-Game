@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Right Teleport
   - Left Teleport
+  - Pellet
   layers:
   - Default
   - TransparentFX
