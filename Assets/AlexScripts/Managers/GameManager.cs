@@ -46,10 +46,18 @@ public class GameManager : MonoBehaviour
 
         for (int i = 0; i < this.ghosts.Length; i++)
         {
-            this.ghosts[i].gameObject.SetActive(true);
+            Ghost ghost = this.ghosts[i].GetComponent<Ghost>();
+            if (ghost != null)
+            {
+                ghost.ResetState();
+            }
         }
 
-        this.pacman.gameObject.SetActive(true);
+        Pacman pacman = this.pacman.GetComponent<Pacman>();
+        if (pacman != null)
+        {
+            pacman.ResetState();
+        }
     }
 
     private void GameOver()
