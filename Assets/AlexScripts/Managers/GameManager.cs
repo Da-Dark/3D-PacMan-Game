@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if(this.lives <= 0 && Input.anyKeyDown)
+        if (this.lives <= 0 && Input.anyKeyDown)
         {
             NewGame();
         }
@@ -68,6 +68,7 @@ public class GameManager : MonoBehaviour
         }
 
         this.pacman.gameObject.SetActive(false);
+        Update();
     }
 
     private void SetScore(int score)
