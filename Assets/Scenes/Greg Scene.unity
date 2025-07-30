@@ -1557,6 +1557,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bef4ddb2af1edc48b7d36684612729f, type: 3}
+--- !u!1001 &1489862964
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: ccdf08be5d0a865439d7c25cd4cab27b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -33.009842
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccdf08be5d0a865439d7c25cd4cab27b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccdf08be5d0a865439d7c25cd4cab27b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -45.960777
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccdf08be5d0a865439d7c25cd4cab27b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccdf08be5d0a865439d7c25cd4cab27b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccdf08be5d0a865439d7c25cd4cab27b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccdf08be5d0a865439d7c25cd4cab27b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccdf08be5d0a865439d7c25cd4cab27b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccdf08be5d0a865439d7c25cd4cab27b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccdf08be5d0a865439d7c25cd4cab27b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ccdf08be5d0a865439d7c25cd4cab27b, type: 3}
+      propertyPath: m_Name
+      value: pac man map 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ccdf08be5d0a865439d7c25cd4cab27b, type: 3}
 --- !u!1001 &1504068682
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2165,3 +2222,4 @@ SceneRoots:
   - {fileID: 1395437394}
   - {fileID: 80007}
   - {fileID: 550368088}
+  - {fileID: 1489862964}
