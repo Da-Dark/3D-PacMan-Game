@@ -12,7 +12,11 @@ public class GhostHome : GhostBehavior
     }
     private void OnDisable()
     {
-        StartCoroutine(ExitTransform());
+        if (this.gameObject.activeSelf)
+        {
+            StartCoroutine(ExitTransform());
+        }
+
     }
 
     private IEnumerator ExitTransform()
