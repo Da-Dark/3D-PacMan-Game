@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public int score { get; private set; }
     public int lives { get; private set; }
 
+
     private void Start()
     {
         NewGame();
@@ -118,12 +119,16 @@ public class GameManager : MonoBehaviour
     {
         for (int i = 0; i < this.ghosts.Length; i++)
         {
-            this.ghosts[i].frightened.Enable(pellet.duration);
+            Ghost ghost = this.ghosts[i].GetComponent<Ghost>();
+            if (ghost != null && ghost.frightened != null)
+            {
+                ghost.frightened.Enable(pellet.duration);
+            }
         }
 
 
         PelletEaten(pellet);
-        CancelInvoke();
+        CancelInvoke(nameof(ResetGhostMultiplier));
         Invoke(nameof(ResetGhostMultiplier), pellet.duration);
     }
 
